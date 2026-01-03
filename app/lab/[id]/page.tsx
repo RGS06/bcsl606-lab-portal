@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect, forwardRef, useRef } from "react";
-import { auth } from "../../../../lib/firebase"; 
 import { onAuthStateChanged } from "firebase/auth";
 import { useRouter } from "next/navigation";
-import { manuals } from "../../../../data/manuals";
+import { auth } from "../../../lib/firebase"; 
+import { manuals } from "../../../data/manual";
 import { FileDown, ArrowLeft, Shield, Book, ChevronRight, ChevronLeft, Terminal } from "lucide-react";
 import Link from "next/link";
 import HTMLFlipBook from "react-pageflip";
