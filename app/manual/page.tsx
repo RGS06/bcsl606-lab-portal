@@ -78,10 +78,34 @@ export default function MasterManualPage() {
       <div className="flex-1 flex items-center justify-center bg-[#0b1120] overflow-hidden p-4 relative perspective-1000">
         <div className="absolute w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <HTMLFlipBook 
-            width={800} height={950} size="stretch" minWidth={400} maxWidth={1000} minHeight={500} maxHeight={1400}
-            maxShadowOpacity={0.5} showCover={true} mobileScrollSupport={false} className="shadow-2xl" ref={bookRef}
-        >
+        {/* @ts-ignore */}
+<HTMLFlipBook 
+    width={800} 
+    height={950} 
+    size="stretch" 
+    minWidth={400} 
+    maxWidth={1000} 
+    minHeight={500} 
+    maxHeight={1400}
+    maxShadowOpacity={0.5} 
+    showCover={true} 
+    mobileScrollSupport={false} 
+    className="shadow-2xl" 
+    ref={bookRef}
+    // Add these default required props below
+    style={{}}
+    startPage={0}
+    drawShadow={true}
+    flippingTime={1000}
+    usePortrait={true}
+    startZIndex={0}
+    autoSize={true}
+    clickEventForward={true}
+    useMouseEvents={true}
+    swipeDistance={30}
+    showPageCorners={true}
+    disableFlipByClick={false}
+>
             <Cover />
 
             {/* INDEX */}
